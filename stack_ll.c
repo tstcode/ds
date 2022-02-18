@@ -35,17 +35,17 @@ void pop()
 }
 void display()
 {
-    int i;
-    struct node *p=top;
-    if (top==NULL)
-        printf("stack is empty");
-    else
-    {
-        while(p!=NULL)
+    struct node *q=top;
+    if(top==NULL)
+    printf("\nstack is empty");
+    else{
+        printf("\nstack elements are : ");
+        while (q!=NULL)
         {
-            printf("Stack elements are %d ",p->data);
-            p=p->next;
+            printf("%d ",q->data);
+            q=q->next;
         }
+        
     }
 }
 void Top()
